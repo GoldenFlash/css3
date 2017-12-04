@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.content{
+			background-color: #8F6666;
+			position:absolute;
+			left:0;
+			top:0;
+			right:0;
+			bottom:0;
+			text-align: center;
+			padding:200px;
+
+		}
+		.loading1{
+			display:inline-block;
+			width:10px;
+			height:100px;
+			background-color:#4DDACD;
+			animation:loading 1s 0s alternate-reverse infinite;
+		}
+		.loading2{
+			
+			display:inline-block;
+			width:10px;
+			height:100px;
+			background-color:#DA4D78;
+			
+			animation:loading 1s 0.2s alternate-reverse infinite;
+		}
+		.loading3{
+
+			display:inline-block;
+			width:10px;
+			height:100px;
+			background-color:#DA4D78;
+			
+			animation:loading 1s 0.4s alternate-reverse infinite;
+		}
+		@keyframes loading{
+			0%{transform: scaleY(0.5)}
+			60%{transform: scaleY(0.5)}
+			100%{transform: scaleY(1)}
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="loading1"></div>
+		<div class="loading2"></div>
+		<div class="loading3"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    .ct{
+      border:solid red 1px;
+      height:500px;
+      width:1200px;
+      background: url(http://dl.bizhi.sogou.com/images/2012/04/24/213309.jpg) center center no-repeat;
+      background-size:content;
+    }
+    .ct::before{
+      content:'';
+      display:inline-block;
+      height:500px;
+      width:600px;
+     /*background: linear-gradient(to right ,rgba(255,0,0,0), rgba(255,0,0,1));*/
+     background: radial-gradient(circle,rgba(255,0,0,0), rgba(255,0,0,1));
+    }
+   .ct::after{
+      content:'';
+      display:inline-block;
+      height:500px;
+      width:600px;
+      /*background:linear-gradient(to left,rgba(255,0,0,0), rgb(187, 61, 187));*/
+      background: radial-gradient(circle,rgba(255,0,0,0), rgb(187, 61, 187))
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="ct"></div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	   	.content{
+	   		position:absolute;
+	   		top:0;
+	   		bottom:0;
+	   		left:0;
+	   		right:0;
+	   		background-color: #837F7F;
+	   	}
+		.loading2{
+			margin:100px auto;
+			height:200px;
+			width:200px;
+			border:solid #D2D029 20px;
+			border-radius: 50%;
+			border-top:solid #C98F8F 20px;
+			animation:load2 1s linear infinite;
+		}
+		@keyframes load2 {
+	      0% {
+	        transform: rotate(0deg);
+	      }
+	      100% {
+	        transform: rotate(360deg);
+	      }
+    	}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="loading2"></div>
+	</div>
+</body>
+</html>
